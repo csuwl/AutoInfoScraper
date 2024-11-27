@@ -42,6 +42,7 @@ try:
             if series_card_name:
                 href = series_card_name.get('href')
                 text = series_card_name.text.strip()
+                print("进度：",text,href)
                 # 使用正则表达式提取ID
                 match = re.search(r'/auto/series/(\d+)', href)
                 if match:
